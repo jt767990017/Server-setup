@@ -248,3 +248,18 @@
 	 			接口和接口继承关系，可以单继承，多继承，多级继承
 
 	 			接口多继承，抽象类单继承 因为java不允许多继承，多继承是通过接口来实现的
+				
+				
+1、Java 异常处理的五个关键字
+
+	try catch finally throws throw
+	
+2、java中异常分几类分别说明下
+	
+	NullPointException   空指针异常
+	
+	ClassCastException   类型转换错误
+	
+	ArrayIndexOutOfBoundsException 数组下标越界异常
+	
+	
