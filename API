@@ -99,9 +99,21 @@ ArrayList,LinkedList,Vector三者的相同点与不同点？
                 在扩容方面，默认扩容为原来的数组长度的2倍
                 
 Set存储数据的特点是什么？常见的实现类有什么？说明一下彼此的特点。
-
-    特点：无序，不可重复
+      
+    Set接口常用的方法：和Collection一样
+    存储特点：相对无序存储，不可以存储相同的元素(排重)，不能通过下标访问
+    
     HashSet：------- hashSet实现了HashMap键的维护
+                 特点：无序，不可重复
                  相对无序存储，不可以存储相同元素（排重），通过哈希表实现的集合
                  hashCode是Object中的方法，每个对象的hashCode值是唯一的，所以可以理解成hashCode值表示这个对象在内存中的位置
                  equlas()方法是Object中的方法，表示比较两个对象是否相等，若不重写相当于比较对象的地址值
+                 
+    LinkedHashSet：
+                  LinkedHashSet类是具有可预知迭代顺序(相对有序)的Set接口的哈希表和链接列表实现。是HashSet的子类
+                  存储特点：相对有序的存储，不可以存储相同的元素(排重)，通过链表实现的集合(注定相对有序)
+                  LinkedHashSet集合的元素排重与HashSet集合拍重方法一致
+                  
+     TreeSet：------（排序）集合:TreeSet是TreeMap的键的维护
+                  底层使用treeMap实现，实现了sortedset接口。红黑树实现，不允许重复。可以自然和定制排序
+      
