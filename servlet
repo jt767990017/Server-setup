@@ -1,0 +1,50 @@
+js中根据name获取元素集合的方法为 getElementbyNames(“”)
+Msql默认端口号 3306  tomcat默认的端口号8080
+JS中 生成一个随机数，范围从0-55 Math.round(Math.random()*55)
+jsp中七个页面元素分别是
+        静态内容————>HTML静态文本
+        指令————————><%@ page import="java.util.*"%>
+        表达式——————><%=Java表达式%>
+        scriptlet———><%Java代码%>
+        声明————————><%!字段或方法%>
+        动作————————><Jsp:include page="Filename"/>
+        注释————————><%-- --%>
+JSP中九个内置对象分别是  pageContext、request、response、config、page、application、exception、out、session
+jsp中的四个作用域分别是  pageContext、request、session、application
+Web的mvc三层结构中的m,v,c分别代表什么  模型、视图、控制器
+servlet的工作流程
+    1、加载servlet类
+         类加载器负责加载servlet类。当web容器收到servlet的第一个请求时，将加载servlet类
+    2、创建servlet实例
+          web容器在加载servlet类之后创建一个servlet实例。servlet实例在servlet生命周期中只创建一次
+    3、调用init方法
+          web容器在创建servlet实例后调用init方法一次，init方法用于初始化servlet。它是Servlet接口的生命周期方法
+    4、调用service方法
+          每当收到servlet的请求时，web容器都会调用service方法。如果servlet未初始化，则遵循上述前三个步骤，然后调用service方法，如果servlet被初始化。它调用service方法，（注意serviet只初始化一次）
+    5、调用destroy方法
+          从服务中删除servlet实例之前，web容器调用destroy方法。它使servlet有机会清理所有资源，例如内存线程
+jdbc操作数据库的步骤
+    1、导入jar包
+    2、连接驱动
+    3、创建数据库连接
+    4、写SQL
+    5、创建数据库操作对象
+    6、执行SQL
+    7、关闭连接释放资源
+请至少写出10个js常见的事件，并注明其含义
+    1、onabort   图像加载被终端
+    2、onblur    元素失去焦点
+    3、onchange  用户改变域的内容
+    4、onclick   鼠标点击某个对象
+    5、onload    某个页面或图像被加载完成
+    6、onreset   重置按钮被点击
+    7、onselect  文本被选定
+    8、onsubmit  提交按钮被点击
+    9、onunload  用户退出页面
+    10、onfocus  元素获得焦点
+ Redirect和forward的区别
+    地址栏: 重定向不回使地址栏发生改变，转发可以
+    数据共享：重定向转发的页面和转发到的页面可以共享request里面的数据，转发不能共享数据
+    运用地方：重定向一般用于用户登录的时候好，根据角色转发到响应的，转发用于用户注销登录时返回主页面和跳转到其他的网站等
+    效率：重定向高，转发低
+    
